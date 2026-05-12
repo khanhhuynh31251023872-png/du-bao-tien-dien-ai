@@ -1,0 +1,47 @@
+{
+  "best_model": "RandomForest",
+  "rows_after_cleaning": 40,
+  "target_unit": "nghìn đồng",
+  "feature_columns": [
+    "People",
+    "AC_Units",
+    "AC_Hours",
+    "Fans",
+    "Fan_Hours",
+    "Fridges",
+    "Area",
+    "AC_Load",
+    "Fan_Load",
+    "Total_Appliances",
+    "Cooling_Per_Person",
+    "Area_Per_Person",
+    "Device_Density"
+  ],
+  "leaderboard": [
+    {
+      "model": "RandomForest",
+      "MAE_thousand_VND": 408.96,
+      "RMSE_thousand_VND": 659.99,
+      "R2": -0.0388
+    },
+    {
+      "model": "ExtraTrees",
+      "MAE_thousand_VND": 432.0,
+      "RMSE_thousand_VND": 689.51,
+      "R2": -0.1338
+    },
+    {
+      "model": "GradientBoosting",
+      "MAE_thousand_VND": 525.67,
+      "RMSE_thousand_VND": 848.08,
+      "R2": -0.7153
+    },
+    {
+      "model": "Ridge_Log",
+      "MAE_thousand_VND": 1467.02,
+      "RMSE_thousand_VND": 3385.18,
+      "R2": -26.3288
+    }
+  ],
+  "note": "Dataset còn nhỏ, chỉ nên xem kết quả là mô hình demo học máy, không phải công cụ dự báo chính xác tuyệt đối."
+}
